@@ -16,11 +16,12 @@ export default class IndexPage extends React.Component {
           {posts
             .map(({ node: post }) => (
               <div
-                className="content"
+                className="content card"
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
-                <p>
+              <div class="card-content">  
+              <p>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
@@ -35,6 +36,7 @@ export default class IndexPage extends React.Component {
                     Keep Reading →
                   </Link>
                 </p>
+                </div>
               </div>
             ))}
         </div>
