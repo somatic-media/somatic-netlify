@@ -19,13 +19,14 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-          <img src={image} /> 
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+      <div className="full-width-image-container" style={{ backgroundImage: `url(${image})` }}>
+      <h1 className="title is-size-2 has-text-weight-bold is-white is-bold-light">
               {title}
             </h1>
+      </div>
+      <div className="container content">
+        <div className="columns">
+          <div className="column is-8 is-offset-1">
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -40,6 +41,14 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+          </div>
+          <div className="column is-2 is-definitely-flex">
+          <img 
+            src="http://placehold.it/400x400" 
+            alt="avatar placeholder" 
+          />
+          <span className="userName">Cheri Cunningham</span>
+
           </div>
         </div>
       </div>

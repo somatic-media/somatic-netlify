@@ -6,11 +6,16 @@ import logo from '../img/osclasswizards_logo.png'
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
-    <div className="container">
+  <div className="container is-centered">
+  <p className="welcome_text">
+    Welcome Text
+  </p>
+  </div>  
+  <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '300px' }} />
+            <img src={logo} alt="Kaldi" style={{ width: '300px' }}></img>
           </figure>
         </Link>
       </div>
@@ -24,13 +29,13 @@ const Navbar = () => (
       </div>
       <div className="navbar-end">
         <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+          className="button is-primary is-cta"
+          href="https://mumslocalquarter.com.au/post-a-listing"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="icon">
-            <img src={github} alt="Github" />
+          <span className="text">
+            Post A Listing
           </span>
         </a>
       </div>
