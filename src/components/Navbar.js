@@ -6,8 +6,8 @@ import logo from '../img/osclasswizards_logo.png'
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
-  <div className="container is-centered">
-  <p className="welcome_text">
+  <div className="container is-centered is-welcome-text">
+  <p>
     Welcome Text
   </p>
   </div>  
