@@ -12,7 +12,7 @@ export default class IndexPage extends React.Component {
       <div className="content container">
             <h1 className="has-text-weight-bold is-size-2 margin-bot-40">Welcome To Mums' Local Quarter</h1>
           </div>
-        <div className="container blog-area tile is-ancestor">
+        <div className="blog-area tile is-ancestor">
           {posts
             .map(({ node: post }) => (
               <div
