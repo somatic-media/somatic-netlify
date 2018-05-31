@@ -50,6 +50,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  fimage: PropTypes.any,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
@@ -64,6 +65,7 @@ const BlogPost = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
+      fimage={post.frontmatter.image}
     />
   )
 }
@@ -86,6 +88,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        image
       }
     }
   }
