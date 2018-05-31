@@ -11,6 +11,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  image,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -21,6 +22,7 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+          <img src={image} /> 
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -65,7 +67,7 @@ const BlogPost = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
-      fimage={post.frontmatter.image}
+      image={post.frontmatter.image}
     />
   )
 }

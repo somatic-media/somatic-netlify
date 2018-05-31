@@ -5,6 +5,8 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+display_url: http://blog.somatic.media
+
 collections:
   - name: "blog"
     label: "Blog"
@@ -24,7 +26,6 @@ collections:
     label: "Podcast"
     folder: "src/pages/podcast"
     create: true
-    slug: "{{ slug }}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
