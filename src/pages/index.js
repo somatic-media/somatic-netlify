@@ -9,14 +9,14 @@ export default class IndexPage extends React.Component {
 
     return (
       <section className="section">
-        <div className="container columns">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Welcome To Mums' Local Quarter</h1>
+      <div className="content container">
+            <h1 className="has-text-weight-bold is-size-2 margin-bot-40">Welcome To Mums' Local Quarter</h1>
           </div>
+        <div className="container blog-area tile is-ancestor">
           {posts
             .map(({ node: post }) => (
               <div
-                className="content card column is-half"
+                className="content tile"
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
