@@ -20,6 +20,11 @@ export default class IndexPage extends React.Component {
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
+              <div className="card-image">
+                <figure>
+                  <img src={post.frontmatter.image} />
+                </figure>
+              </div>
               <div class="card-content">  
               <p>
                   <Link className="has-text-primary" to={post.fields.slug}>
@@ -69,6 +74,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            image
             date(formatString: "MMMM DD, YYYY")
           }
         }
