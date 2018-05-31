@@ -5,7 +5,7 @@ import github from '../img/github-icon.svg'
 import logo from '../img/osclasswizards_logo.png'
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
+  <nav className="navbar is-transparent is-columns">
   <div className="container is-centered is-welcome-text">
   <p>
     Welcome Text
