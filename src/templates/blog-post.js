@@ -4,7 +4,6 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
-import BlogSidebar from '../components/BlogSidebar'
 
 export const BlogPostTemplate = ({
   content,
@@ -49,7 +48,6 @@ export const BlogPostTemplate = ({
               alt="avatar placeholder" 
             />
           <span className="userName">Cheri Cunningham</span>
-          <BlogSidebar />
           </div>
         </div>
       </div>
