@@ -68,21 +68,31 @@ $primary-invert: $mlq-orange-invert
   background-color: rgba(243, 110, 53, .5)
   background-blend-mode: overlay
   margin: -40px -50vw 5em -50vw
+  background-size: cover
+  background-attachment: fixed
 
 .is-definitely-flex
   flex:auto
   display:flex
-  
+
 .navbar
   box-shadow: 0 0 5px 0 rgba(3, 3, 3, 0.25)
+  z-index: 9000
+  padding-top: 
 .navbar-end
   align-items: center !important
+
+.blog-section 
+  padding-top: 0 !important
 
 .is-centered
   text-align: center
 
 .is-welcome-text
   background-color: #333
+
+.navbar .is-fluid
+  margin: 0 !important
 
 .is-welcome-text p 
   color: white
@@ -92,11 +102,19 @@ $primary-invert: $mlq-orange-invert
 
 .tile
   padding: 0 !important
-  margin: 2em 4em
+  margin: 2em 2em
 
+.is-definitely-flex
+  flex: auto !important
 
 .is-columns 
   flex-direction: column
   display: flex
+
+.content figure
+  margin-left: 0 !important
+  margin-right: 0 !important
+
+
 
 @import "~bulma"

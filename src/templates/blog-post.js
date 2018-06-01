@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
+import BlogSidebar from '../components/BlogSidebar'
 
 export const BlogPostTemplate = ({
   content,
@@ -17,7 +18,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section id="blog-post" className="section blog-section">
       {helmet || ''}
       <div className="full-width-image-container" style={{ backgroundImage: `url(${image})` }}>
       <h1 className="title is-size-2 has-text-weight-bold is-white is-bold-light">
@@ -43,12 +44,12 @@ export const BlogPostTemplate = ({
             ) : null}
           </div>
           <div className="column is-2 is-definitely-flex">
-          <img 
-            src="http://placehold.it/400x400" 
-            alt="avatar placeholder" 
-          />
+            <img 
+              src="http://placehold.it/400x400" 
+              alt="avatar placeholder" 
+            />
           <span className="userName">Cheri Cunningham</span>
-
+          <BlogSidebar />
           </div>
         </div>
       </div>

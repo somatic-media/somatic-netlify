@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
                   <img src={post.frontmatter.image} />
                 </figure>
               </div>
-              <div class="card-content">  
+              <div className="card-content">  
               <p>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button is-small" to={post.fields.slug}>
+                  <Link className="button is-primary" to={post.fields.slug}>
                     Keep Reading →
                   </Link>
                 </p>
