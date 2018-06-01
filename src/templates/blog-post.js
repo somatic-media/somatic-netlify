@@ -18,12 +18,12 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section id="blog-post" className="section blog-section">
+    <section className="section blog-section">
       {helmet || ''}
       <div className="full-width-image-container" style={{ backgroundImage: `url(${image})` }}>
-      <h1 className="title is-size-2 has-text-weight-bold is-white is-bold-light">
-              {title}
-            </h1>
+      <span className="title is-size-2 has-text-weight-bold is-white is-bold-light">
+            {title}
+      </span>
       </div>
       <div className="container content">
         <div className="columns">
