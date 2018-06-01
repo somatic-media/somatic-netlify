@@ -4,7 +4,7 @@ import { v4 } from 'uuid'
 
 const BlogSidebar = ({ PostContent }) => (
   <div>
-  
+  <h1>Test!</h1>
   </div>
 )
 
