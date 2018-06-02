@@ -11,8 +11,8 @@ export default class IndexPage extends React.Component {
       <section className="section">
       <div className="content container">
             <h1 className="has-text-weight-bold is-size-2 margin-bot-40">Welcome To Mums' Local Quarter</h1>
-          </div>
-        <div className="blog-area tile is-ancestor">
+      </div>
+      <div className="container tile is-parent">
           {posts
             .map(({ node: post }) => (
               <div
